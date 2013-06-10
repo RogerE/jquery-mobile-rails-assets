@@ -1,17 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jquery/mobile/rails/assets/version'
+require 'jquery-mobile-rails-assets/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jquery-mobile-rails-assets"
-  spec.version       = Jquery::Mobile::Rails::Assets::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.version       = JqueryMobileRailsAssets::VERSION
+  spec.authors       = ["RogerE"]
+  spec.email         = ["roger@webfokus.no"]
+  spec.description   = "Provides the 'jQuery Mobile' assets for your Rails application."
+  spec.summary       = "Use 'jQuery Mobile' with Rails Asset Pipeline"
+  spec.homepage      = "https://github.com/RogerE/jquery-mobile-rails-assets-mobile-rails-assets"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
