@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = JqueryMobileRailsAssets::VERSION
   spec.authors       = ["RogerE"]
   spec.email         = ["roger@webfokus.no"]
-  spec.description   = "Provides the 'jQuery Mobile' assets for your Rails application."
-  spec.summary       = "Use 'jQuery Mobile' with Rails Asset Pipeline"
-  spec.homepage      = "https://github.com/RogerE/jquery-mobile-rails-assets-mobile-rails-assets"
+  spec.description   = "Provides the jQuery Mobile assets for your Rails application."
+  spec.summary       = "Use jQuery Mobile with Rails Asset Pipeline"
+  spec.homepage      = "https://github.com/RogerE/jquery-mobile-rails-assets"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
