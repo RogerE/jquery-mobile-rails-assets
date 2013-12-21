@@ -12,6 +12,9 @@ task :update_assets do
     File.open(css_file_name_out, "r:UTF-8") do |file|
       file_content = file.read
     end
+    file_content.gsub! /url\(images\/icons-png\/([A-Za-z0-9_-]*\.)(png|gif)\)/ do
+      "image-url(\"jquery-mobile/icons-png/#{$1}#{$2}\")"
+    end
     file_content.gsub! /url\(images\/([A-Za-z0-9_-]*\.)(png|gif)\)/ do
       "image-url(\"jquery-mobile/#{$1}#{$2}\")"
     end
